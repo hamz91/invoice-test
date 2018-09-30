@@ -4,9 +4,11 @@
 
 - Clone the repo.
 
-- Run npm install in the terminal to acquire all dependencies.
+- Run 'npm install' in the terminal to acquire all dependencies.
 
-- Run node server.js in the terminal to activate the server, please make sure the port number located within the server file is open.
+- Run 'npm run dev -- --watch' to build React.
+
+- Run 'node server.js' in the terminal to activate the server, please make sure the port number located within the server file is open.
 
 - Open local host with the matching port number in your browser e.g. http://localhost:8081/
 

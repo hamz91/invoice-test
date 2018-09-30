@@ -9,8 +9,8 @@ function App() {
       <Main />
       <footer className="footer">
         <h4>
-          Get in touch -
-          <a href="https://www.nimbla.com/" target="_blank">
+          Get in touch -{" "}
+          <a className="nimbla" href="https://www.nimbla.com/" target="_blank">
             Nimbla
           </a>
         </h4>

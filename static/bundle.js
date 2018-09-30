@@ -25640,9 +25640,10 @@ function App() {
         "h4",
         null,
         "Get in touch -",
+        " ",
         _react2.default.createElement(
           "a",
-          { href: "https://www.nimbla.com/", target: "_blank" },
+          { className: "nimbla", href: "https://www.nimbla.com/", target: "_blank" },
           "Nimbla"
         )
       )
