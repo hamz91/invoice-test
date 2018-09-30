@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvoiceForm matches the snapshot 1`] = `
+<div
+  className="form-wrapper"
+>
+  <h4
+    className="form-title"
+  >
+    Please Enter Your Invoice Details Below
+  </h4>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <p>
+      Your Name
+    </p>
+    <input
+      className="form-input"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <p>
+      Date Invoice is Due
+    </p>
+    <input
+      className="form-input"
+      onChange={[Function]}
+      type="date"
+      value=""
+    />
+    <p>
+      Amount Payable
+    </p>
+    <input
+      className="form-input"
+      onChange={[Function]}
+      type="number"
+      value=""
+    />
+    <p>
+      Invoice Description
+    </p>
+    <input
+      className="form-input"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <button>
+      Submit
+    </button>
+  </form>
+</div>
+`;

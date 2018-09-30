@@ -9,7 +9,7 @@ function App() {
       <Main />
       <footer className="footer">
         <h4>
-          Get in touch -{" "}
+          Get in touch -
           <a href="https://www.nimbla.com/" target="_blank">
             Nimbla
           </a>
