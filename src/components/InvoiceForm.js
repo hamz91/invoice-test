@@ -82,6 +82,8 @@ class InvoiceForm extends React.Component {
             type="text"
             value={this.state.customerName}
             onChange={this.nameChange}
+            placeholder="John Smith"
+            required
           />
           <p>Date Invoice is Due</p>
           <input
@@ -89,13 +91,16 @@ class InvoiceForm extends React.Component {
             type="date"
             value={this.state.dateDue}
             onChange={this.dateChange}
+            required
           />
-          <p>Amount Payable</p>
+          <p>Amount Payable (£)</p>
           <input
             className="form-input"
             type="number"
             value={this.state.invoiceValue}
             onChange={this.valueChange}
+            placeholder="100"
+            required
           />
           <p>Invoice Description</p>
           <input
@@ -103,7 +108,10 @@ class InvoiceForm extends React.Component {
             type="text"
             value={this.state.description}
             onChange={this.descriptionChange}
+            placeholder="Annual Accounts"
+            required
           />
+          <br />
           <br />
           <button>Submit</button>
         </form>

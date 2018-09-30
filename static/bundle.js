@@ -25706,7 +25706,7 @@ function Header() {
           _react2.default.createElement(
             _reactRouterDom.NavLink,
             { activeStyle: { color: "red" }, to: "/previous-invoices" },
-            "Old Invoices"
+            "Invoices"
           )
         )
       )
@@ -25853,7 +25853,9 @@ var InvoiceForm = function (_React$Component) {
             className: "form-input",
             type: "text",
             value: this.state.customerName,
-            onChange: this.nameChange
+            onChange: this.nameChange,
+            placeholder: "John Smith",
+            required: true
           }),
           _react2.default.createElement(
             "p",
@@ -25864,18 +25866,21 @@ var InvoiceForm = function (_React$Component) {
             className: "form-input",
             type: "date",
             value: this.state.dateDue,
-            onChange: this.dateChange
+            onChange: this.dateChange,
+            required: true
           }),
           _react2.default.createElement(
             "p",
             null,
-            "Amount Payable"
+            "Amount Payable (\xA3)"
           ),
           _react2.default.createElement("input", {
             className: "form-input",
             type: "number",
             value: this.state.invoiceValue,
-            onChange: this.valueChange
+            onChange: this.valueChange,
+            placeholder: "100",
+            required: true
           }),
           _react2.default.createElement(
             "p",
@@ -25886,8 +25891,11 @@ var InvoiceForm = function (_React$Component) {
             className: "form-input",
             type: "text",
             value: this.state.description,
-            onChange: this.descriptionChange
+            onChange: this.descriptionChange,
+            placeholder: "Annual Accounts",
+            required: true
           }),
+          _react2.default.createElement("br", null),
           _react2.default.createElement("br", null),
           _react2.default.createElement(
             "button",

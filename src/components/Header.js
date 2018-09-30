@@ -14,7 +14,7 @@ function Header() {
           </li>
           <li>
             <NavLink activeStyle={{ color: "red" }} to="/previous-invoices">
-              Old Invoices
+              Invoices
             </NavLink>
           </li>
         </ul>
