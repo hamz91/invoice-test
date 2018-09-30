@@ -25803,32 +25803,38 @@ var InvoiceForm = function (_React$Component) {
     value: function formSubmit(event) {
       event.preventDefault();
 
-      var invoice = {
-        name: this.state.customerName,
-        date: this.state.dateDue,
-        value: this.state.invoiceValue,
-        description: this.state.description,
-        paid: "Still awaiting payment"
-      };
+      // form validation to acquire both the first and last name
+      // object sent to server to be stored as a new invoice
+      if (this.state.customerName.trim().indexOf(" ") != -1) {
+        var invoice = {
+          name: this.state.customerName,
+          date: this.state.dateDue,
+          value: this.state.invoiceValue,
+          description: this.state.description,
+          paid: "Still awaiting payment"
+        };
 
-      fetch("/api/invoices", {
-        method: "post",
-        body: JSON.stringify(invoice),
-        headers: {
-          "Content-Type": "application/json"
-        }
-      }).then(function (response) {
-        return response.json();
-      }).then(function (data) {
-        alert("Your invoice has been successfully submitted");
-      });
+        fetch("/api/invoices", {
+          method: "post",
+          body: JSON.stringify(invoice),
+          headers: {
+            "Content-Type": "application/json"
+          }
+        }).then(function (response) {
+          return response.json();
+        }).then(function (data) {
+          alert("Your invoice has been successfully submitted");
+        });
 
-      this.setState({
-        invoiceValue: "",
-        dateDue: "",
-        customerName: "",
-        description: ""
-      });
+        this.setState({
+          invoiceValue: "",
+          dateDue: "",
+          customerName: "",
+          description: ""
+        });
+      } else {
+        alert("Please enter both a first and last name");
+      }
     }
   }, {
     key: "render",
