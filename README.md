@@ -6,7 +6,7 @@
 
 - Run 'npm install' in the terminal to acquire all dependencies.
 
-- Run 'npm run dev -- --watch' to build React.
+- Run 'npm run dev' to build React.
 
 - Run 'node server.js' in the terminal to activate the server, please make sure the port number located within the server file is open.
 
